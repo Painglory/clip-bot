@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Clip-Bot</title><style>
+:root{--bg:#0b0c10;--card:#14161d;--line:#232733;--text:#eceef3;--mute:#9aa0ad;--acc:#9147ff}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 "Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}
+a{color:#b794ff}header{border-bottom:1px solid var(--line)}nav{max-width:860px;margin:0 auto;padding:16px 24px;display:flex;gap:20px;align-items:center}
+nav b{font-size:18px;margin-right:auto;display:flex;align-items:center;gap:10px}nav b i{width:28px;height:28px;border-radius:8px;background:var(--acc);display:inline-grid;place-items:center;font-style:normal;font-size:13px}
+nav a{color:var(--mute);text-decoration:none}nav a.on,nav a:hover{color:var(--text)}
+main{max-width:860px;margin:0 auto;padding:40px 24px 60px}h1{font-size:34px;line-height:1.2;margin:0 0 12px;letter-spacing:-.02em}h2{font-size:20px;margin:34px 0 8px}
+.lead{font-size:19px;color:var(--mute)}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:18px 0}
+.yt{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 14px;font-weight:600}
+.yt span{width:30px;height:21px;border-radius:6px;background:#ff0000;display:inline-grid;place-items:center}.yt span:after{content:"";border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+ul{padding-left:22px}li{margin:4px 0}footer{border-top:1px solid var(--line);color:var(--mute);font-size:14px}footer div{max-width:860px;margin:0 auto;padding:20px 24px;display:flex;gap:18px;flex-wrap:wrap}
+.view{display:none}.view.on{display:block}</style></head><body>
+<header><nav><b><i>▶</i>Clip-Bot</b><a href="#home" class="">Home</a><a href="#privacy" class="">Privacy Policy</a><a href="#terms" class="">Terms of Service</a></nav></header><main><section id="home" class="view"><h1>Clip-Bot</h1><p class="lead">A personal tool that turns short Twitch clips of streamers who allow clipping into vertical YouTube Shorts for my own channel.</p>
+<div class="yt"><span></span>Uses YouTube API Services</div>
+<h2>What it does</h2><ul>
+<li>Finds popular public clips of streamers who have publicly allowed clipping.</li>
+<li>Edits them locally into vertical 9:16 videos with subtitles and credits the streamer in the title and description.</li>
+<li>Uploads the finished videos only to my own YouTube channel and shows my own channel statistics in a local dashboard.</li></ul>
+<h2>Who can use it</h2><p>Clip-Bot runs only on my own computer. It is not offered to other people and does not access anyone else's YouTube account.</p>
+<div class="card">By using Clip-Bot you agree to the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>. Data handling is described in the <a href="#privacy">Privacy Policy</a>; see also the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</div>
+<h2>Contact</h2><p>daniekmaier381@gmail.com</p></section><section id="privacy" class="view"><h1>Privacy Policy</h1><p class="lead">Last updated: November 18, 2026</p>
+<p>Clip-Bot is a personal tool operated by Daniel, Germany. Contact: daniekmaier381@gmail.com.</p>
+<h2>Uses YouTube API Services</h2><p>Clip-Bot uses YouTube API Services. By using Clip-Bot you agree to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+<h2>What data is accessed</h2><p>After the account owner signs in with Google, Clip-Bot accesses only the owner's own YouTube channel:</p>
+<ul><li>uploading videos to the owner's channel (videos.insert),</li><li>reading the channel's statistics and list of uploaded videos (channels.list, playlistItems.list, videos.list),</li><li>running public YouTube searches for creators who allow clipping (search.list).</li></ul>
+<h2>How data is used</h2><p>The data is used only to upload the owner's videos and to show statistics in a dashboard on the owner's computer. It is not sold, not shared with third parties and not used for advertising or profiling.</p>
+<h2>How data is stored</h2><p>All data, including Google OAuth tokens, is stored only locally on the owner's computer. Clip-Bot has no server and no database outside that computer. YouTube API data is refreshed or deleted at least every 30 days.</p>
+<h2>Cookies and tracking</h2><p>Clip-Bot and this website do not use cookies, analytics or any tracking.</p>
+<h2>Revoking access and deleting data</h2><p>Access can be revoked at any time on the <a href="https://myaccount.google.com/permissions" rel="noopener">Google security settings page</a>. Deleting Clip-Bot's token files on the computer removes all stored access; deleting its data folder removes all stored data.</p>
+<h2>Changes</h2><p>Changes to this policy are published on this page with a new date.</p></section><section id="terms" class="view"><h1>Terms of Service</h1><p class="lead">Last updated: November 18, 2026</p>
+<p>Clip-Bot is a personal, non-commercial tool operated by Daniel, Germany, for use on his own YouTube channel only.</p>
+<h2>YouTube Terms</h2><p>Clip-Bot uses YouTube API Services. Anyone using it agrees to the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+<h2>Content and permissions</h2><ul><li>Only clips of streamers who have publicly allowed clipping are used.</li>
+<li>Every video credits the original streamer and links to the original clip.</li><li>If a creator withdraws permission, their clips are no longer used and can be removed on request.</li></ul>
+<h2>No warranty</h2><p>Clip-Bot is provided as is, without any warranty.</p>
+<h2>Contact</h2><p>Requests, including removal requests: daniekmaier381@gmail.com</p></section></main>
+<footer><div><span>Clip-Bot · personal tool by Daniel (Germany)</span><span>Uses YouTube API Services</span><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a><a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></div></footer><script>function go(){var h=(location.hash||'#home').slice(1);if(!document.getElementById(h))h='home';
+document.querySelectorAll('.view').forEach(function(v){v.classList.toggle('on',v.id==h)});
+document.querySelectorAll('nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')=='#'+h)});
+document.title=({home:'Clip-Bot',privacy:'Privacy Policy – Clip-Bot',terms:'Terms of Service – Clip-Bot'})[h];scrollTo(0,0)}
+addEventListener('hashchange',go);go();</script></body></html>
